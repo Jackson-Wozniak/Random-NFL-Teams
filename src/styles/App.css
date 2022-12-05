@@ -1,0 +1,60 @@
+.App {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height : 100vh;
+  width : 100vh;
+}
+
+.output {
+  position : absolute;
+  left : 50%;
+  top : 50%;
+  min-height : 100%;
+  min-width : 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.team {
+  color : rgb(20, 17, 33);
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: bold;
+  margin : 10px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.division {
+  font-size: 1.4rem;
+}
+
+.logo {
+  display: block;
+  max-width:50vh;
+  max-height:50vh;
+  width: auto;
+  height: auto;
+  margin : 0px;
+  padding : 0px;
+  border : 1px solid rgb(21, 24, 37);
+  border-radius: 20%;
+}
+
+.new {
+  border-radius: 10px;
+  border : none;
+  background-color: rgb(92, 165, 224);
+  padding : 10px 20px;
+  margin : 10px;
+  color : white;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: bold;
+}

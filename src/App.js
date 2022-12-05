@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/App.css';
+import findRandomNflTeam from './teams/Team';
+import {useState} from "react";
 
 function App() {
+  const [team, setTeam] = new useState(findRandomNflTeam());
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="output">
+        <p className="team name">{team.name}</p>
+        <p className="team division">{team.conference + " " + team.division}</p>
+        <img
+          src={require("./images/" + team.abbrv + ".png")}
+          alt=""
+          className="logo"
+        />
+        <button onClick={() => setTeam(findRandomNflTeam())} className="new">Find New NFL Team</button>
+      </div>
     </div>
   );
 }
