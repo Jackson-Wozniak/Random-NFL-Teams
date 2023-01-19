@@ -4,7 +4,7 @@ import findRandomNflTeam from './teams/Team';
 import {useState} from "react";
 
 function App() {
-  const [team, setTeam] = new useState(findRandomNflTeam());
+  const [team, setTeam] = useState(findRandomNflTeam());
 
   return (
     <div className="App">
