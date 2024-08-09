@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import findRandomNflTeam from './teams/Team';
+import findRandomNflTeam from './utils/Team';
 import {useState} from "react";
 
 function App() {
