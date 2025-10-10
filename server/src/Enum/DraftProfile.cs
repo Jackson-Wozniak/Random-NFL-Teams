@@ -1,6 +1,6 @@
 ﻿namespace server.Enum;
 
-public enum SkillLevel
+public enum DraftProfile
 {
     Elite,
     BlueChip,
