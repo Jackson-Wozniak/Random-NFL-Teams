@@ -1,4 +1,8 @@
+using server.Service;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<CareerGeneratorService>();
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();

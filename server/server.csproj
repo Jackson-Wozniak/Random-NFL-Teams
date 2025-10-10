@@ -13,12 +13,7 @@
 
     <ItemGroup>
       <Folder Include="src\Constants\" />
-      <Folder Include="src\Controller\" />
-      <Folder Include="src\Dto\" />
-      <Folder Include="src\Enum\" />
       <Folder Include="src\Exception\" />
-      <Folder Include="src\Model\" />
-      <Folder Include="src\Service\" />
       <Folder Include="src\Utils\" />
     </ItemGroup>
 
