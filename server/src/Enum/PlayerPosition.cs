@@ -8,3 +8,19 @@ public enum PlayerPosition
     LB = 4,
     CB = 5
 }
+
+public static class PlayerPositionUtils
+{
+    public static PlayerPosition? FromString(string name)
+    {
+        return name.ToUpper() switch
+        {
+            "QB" => PlayerPosition.QB,
+            "HB" => PlayerPosition.HB,
+            "WR" => PlayerPosition.WR,
+            "LB" => PlayerPosition.LB,
+            "CB" => PlayerPosition.CB,
+            _ => null
+        };
+    }
+}
