@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\Constants\" />
+      <Folder Include="src\Controller\" />
+      <Folder Include="src\Dto\" />
+      <Folder Include="src\Enum\" />
+      <Folder Include="src\Exception\" />
+      <Folder Include="src\Model\" />
+      <Folder Include="src\Service\" />
+      <Folder Include="src\Utils\" />
+    </ItemGroup>
+
+</Project>
